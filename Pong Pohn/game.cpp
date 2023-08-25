@@ -75,8 +75,10 @@ void Drawing(Pad& player1, Pad& player2, Ball& ball)
     EndDrawing();
 }
 
-void BallPadCollision(Pad player, Ball& ball) 
+void BallPadCollision(Pad player, Ball& ball) // Separar la colision del movimiento 
 {
+    bool collision = false;
+
     float playerRightEdge = player.x + player.width;
     float playerLeftEdge = player.x; 
     float playerTopEdge = player.y + player.heigth;
@@ -87,7 +89,8 @@ void BallPadCollision(Pad player, Ball& ball)
     float ballTopEdge = ball.y + ball.heigth; 
     float ballBottomEdge = ball.y; 
     
-    if (playerRightEdge >= ballLeftEdge &&
+    //antes iria un if que sea t o f respecto a si hay colision o no
+    if (playerRightEdge >= ballLeftEdge && //se puede separar en varios if 
         playerLeftEdge <= ballRightEdge &&
         playerTopEdge >= ballBottomEdge &&
         playerBottomEdge <= ballTopEdge)
