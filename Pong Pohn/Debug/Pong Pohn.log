@@ -1,4 +1,0 @@
-﻿  game.cpp
-C:\Users\Aula 2\Desktop\Pong Pohn\Pong Pohn\game.cpp(135,31): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Aula 2\Desktop\Pong Pohn\Pong Pohn\game.cpp(136,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  Pong Pohn.vcxproj -> C:\Users\Aula 2\Desktop\Pong Pohn\Debug\Pong Pohn.exe
